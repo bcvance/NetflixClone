@@ -2,12 +2,13 @@
 import { getApp, getApps, initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
+const API_KEY = process.env.NEXT_PUBLIC_GOOGLE_API_KEY
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBvbt5HVur9mv_7PKMOwmfqR0MXxMHXoqU",
+  apiKey: API_KEY,
   authDomain: "nextjs-netflix-f7a4c.firebaseapp.com",
   projectId: "nextjs-netflix-f7a4c",
   storageBucket: "nextjs-netflix-f7a4c.appspot.com",
